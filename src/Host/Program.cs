@@ -1,4 +1,5 @@
 using Application;
+using Host.Middlewares;
 using Infrastructure;
 using Scalar.AspNetCore;
 using Serilog;
@@ -44,12 +45,10 @@ try
         app.MapScalarApiReference();
     }
 
+    app.UseException();
     app.UseHttpsRedirection();
-
     app.UseAuthorization();
-
     app.MapControllers();
-
     app.Run();
 }
 catch (Exception ex)
