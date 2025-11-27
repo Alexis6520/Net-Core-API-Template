@@ -23,8 +23,8 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
-      - name: Build project into custom folder
-        run: dotnet build --no-restore -o ./build_output
+      - name: Build Unit Tests
+        run: dotnet build src/UnitTests/UnitTests.csproj --no-restore -o ./build_output/UnitTests
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
