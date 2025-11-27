@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Tests/">
+    <Project Path="src/IntegrationTests/IntegrationTests.csproj" Id="b873f348-7849-404c-86f1-1756078a3541" />
     <Project Path="src/UnitTests/UnitTests.csproj" Id="86180f13-7196-4aef-a646-40826e733b9a" />
   </Folder>
   <Project Path="src/Application/Application.csproj" />
