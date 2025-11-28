@@ -37,7 +37,7 @@ public class CreateDonutHandler(
 
         _dbContext.Donuts.Add(donut);
         await _dbContext.SaveChangesAsync();
-        _logger.LogInformation("Donut created with ID {DonutId}", donut.Id);
+        _logger.LogInformation("Donut created with ID {DonutId} :)", donut.Id);
         return donut.Id;
     }
 }
