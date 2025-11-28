@@ -26,7 +26,7 @@ jobs:
       - name: Build Unit Tests
         run: dotnet build src/UnitTests/UnitTests.csproj --no-restore -o ./build_output/UnitTests
 
-      - name: Build Unit Tests
+      - name: Build Integration Tests
         run: dotnet build src/IntegrationTests/IntegrationTests.csproj --no-restore -o ./build_output/IntegrationTests
 
       - name: Upload artifacts
